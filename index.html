@@ -42,8 +42,17 @@ font-family: 'Unbounded', cursive; */
                 <div class="col-sm-6 name">
                     <h3>I'm</h3>
                     <h1>Rahul Bhati</h1>
-                    <h3>Full Stack Developer</h3>
-                    <div class="typed-text">Web Designer, Web Developer, Front End Developer</div>
+                    <h3 style="color:#d7681d"><span id="element"></span></h3>
+                    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+                    <script>
+                        var typed = new Typed('#element', {
+                          strings: ['<i>FullStack Devloper</i>','<i>Web Designer</i>', '<i>Web Developer</i>','<i> Front End Developer</i>'],
+                          typeSpeed: 50,
+                          loop:true
+                        });
+                      </script>
+                    <!-- <div class="typed-text">Web Designer, Web Developer, Front End Developer</div> -->
                 </div>
                 <div class="col-sm-6 img">
                     <img src="img/profile.jpg" class="img-fluid" style="border-radius: 50%;">
