@@ -570,7 +570,9 @@ font-family: 'Unbounded', cursive; */
             </section>
         </div>
     </div>
+
     <!-- ===================================== Education Section End ========================================================================-->
+    <button id="scrollToTopBtn">Scroll to Top</button>
 
 </body>
 <footer style="background-image: url('img/footer.png');margin-top: 6%;" id="contact">
@@ -664,7 +666,23 @@ font-family: 'Unbounded', cursive; */
 
     };
 
-
+    //<!-- scroll to top feature -->
+    let scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    setTimeout(
+        ()=>{
+            scrollToTopBtn.innerText = "🔝";
+        }, 1000
+    )
+    scrollToTopBtn.addEventListener("click", ()=>{
+        window.scrollTo({top:0, behavior : "smooth"});
+    })
+    window.addEventListener("scroll", function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollToTopBtn.style.display = "block";
+    } else {
+        scrollToTopBtn.style.display = "none";
+    }
+});
 
 </script>
 <!-- ============================================= For Animation ============================================================= -->
