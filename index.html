@@ -43,8 +43,16 @@ font-family: 'Unbounded', cursive; */
 <body>
 
     <!-- ===================================== Head Section Start ================================================================== -->
-
-        <div class="container-fluid">
+    <!-- Navbar added issue #6 -->
+    <div class="navbar" id="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="container-fluid" id="home">
             <div class="row head" >
                 <div class="col-sm-6 name">
                     <h3>I'm</h3>
@@ -81,7 +89,7 @@ font-family: 'Unbounded', cursive; */
     <!-- ===================================== Head Section End ================================================================== -->
 
     <!-- ===================================== Intro Section Start ================================================================== -->
-    <div class="container-fluid">
+    <div class="container-fluid" id="about">
         <div class="row" style="margin-top: 8%;">
             <div class="col-sm-1"></div>
             <div class="col-sm-4">
@@ -125,7 +133,7 @@ font-family: 'Unbounded', cursive; */
     <!-- ===================================== Intro Section End ================================================================== -->
 
     <!-- ===================================== Skill Section Start ================================================================== -->
-    <div class="container">
+    <div class="container" id="skills">
         <!--   *******  Main Heading Starts  *******   -->
         <div class="row">
             <div class="col-sm-12">
@@ -268,7 +276,7 @@ font-family: 'Unbounded', cursive; */
     <!-- ===================================== Skill Section End ================================================================== -->
 
     <!-- ===================================== Project Section Start ================================================================== -->
-    <div class="container">
+    <div class="container" id="projects">
         <div class="row" style="margin-top: 5%;">
             <div class="col-sm-12">
                 <center>
@@ -507,7 +515,7 @@ font-family: 'Unbounded', cursive; */
     <!-- ===================================== Service Section End ================================================================== -->
 
     <!-- ===================================== Education Section Start ================================================================== -->
-    <div class="container-fluid" style="margin:3% 0;">
+    <div class="container-fluid" style="margin:3% 0;" id="education">
         <div class="row">
             <div class="col-sm-12">
                 <center>
@@ -565,7 +573,7 @@ font-family: 'Unbounded', cursive; */
     <!-- ===================================== Education Section End ========================================================================-->
 
 </body>
-<footer style="background-image: url('img/footer.png');margin-top: 6%;">
+<footer style="background-image: url('img/footer.png');margin-top: 6%;" id="contact">
     <div class="container-fluid" style="padding-top: 3%">
         <div class="row">
             <div class="col-sm-12">
@@ -630,6 +638,34 @@ font-family: 'Unbounded', cursive; */
         duration: 500
     });
         //# sourceURL=pen.js
+</script>
+<!-- for navbar -->
+<script>
+
+    let prevScrollPos = window.pageYOffset;
+    const navbar = document.getElementById("navbar");
+    if(prevScrollPos < 1200){
+        navbar.style.top = "-65px";
+    }
+
+    window.onscroll = function() {
+        let currentScrollPos = window.pageYOffset;
+        if (prevScrollPos > currentScrollPos) {
+            navbar.style.top = "0";
+        } else if (prevScrollPos < currentScrollPos && currentScrollPos >= 500) {
+            navbar.style.top = "0";
+        } else {
+            navbar.style.top = "-65px"; // Adjust this value to match the height of your navbar
+        }
+        prevScrollPos = currentScrollPos;
+        if(prevScrollPos < 500){
+        navbar.style.top = "-65px";
+    }
+
+    };
+
+
+
 </script>
 <!-- ============================================= For Animation ============================================================= -->
 
