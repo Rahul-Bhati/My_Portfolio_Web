@@ -1,4 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Unbounded:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
+
+.navbar-brand{
+  font-family: 'Yesteryear';
+  font-size: 34px;
+}
+
+.navbar{
+  background-color: white;
+  color: black;
+}
+
+.navbar-toggler{
+  border:1px solid rgb(248, 13, 40) !important;
+}
+
+.nav-link{
+  cursor: pointer;
+  font-weight: 650;
+}
+
+
+.nav-link:hover{
+  color: rgb(248, 13, 40) !important ;
+  transform: translateY(-5px);
+  transition: all 0.6s;
+}
 
 .head {
   background-image: url(../img/head.png);

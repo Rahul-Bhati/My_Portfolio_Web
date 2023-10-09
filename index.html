@@ -42,6 +42,41 @@ font-family: 'Unbounded', cursive; */
 
 <body>
 
+    <!-- ===================================== Navbar Section Start ================================================================== -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <span class="navbar-brand">Rahul Bhati</span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#About">ABOUT ME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Skill">SKILL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Portfolio">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Education">EDUCAION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Service">WHAT I DO?</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===================================== Navbar Section End ================================================================== -->
+
     <!-- ===================================== Head Section Start ================================================================== -->
     <div class="container-fluid">
         <div class="row head">
@@ -60,7 +95,7 @@ font-family: 'Unbounded', cursive; */
 
     <!-- ===================================== Intro Section Start ================================================================== -->
     <div class="container-fluid">
-        <div class="row" style="margin-top: 8%;">
+        <div class="row" style="margin-top: 8%;" id="About">
             <div class="col-sm-1"></div>
             <div class="col-sm-4">
                 <img src="img/profile2.jpg" class="img-fluid w3-card-2" style="border-radius: 5%;">
@@ -105,7 +140,7 @@ font-family: 'Unbounded', cursive; */
     <!-- ===================================== Skill Section Start ================================================================== -->
     <div class="container">
         <!--   *******  Main Heading Starts  *******   -->
-        <div class="row">
+        <div class="row" id="Skill">
             <div class="col-sm-12">
                 <center>
                     <h5>MY SKILL</h5>
@@ -247,7 +282,7 @@ font-family: 'Unbounded', cursive; */
 
     <!-- ===================================== Project Section Start ================================================================== -->
     <div class="container">
-        <div class="row" style="margin-top: 5%;">
+        <div class="row" style="margin-top: 5%;" id="Portfolio">
             <div class="col-sm-12">
                 <center>
                     <h5>MY PORTFOLIO</h5>
@@ -376,7 +411,7 @@ font-family: 'Unbounded', cursive; */
 
     <!-- ===================================== Service Section Start ================================================================== -->
     <div class="container-fluid" style="background-color:#eff1f4 ;">
-        <div class="row" style="margin-top: 5%;" data-aos="zoomIn">
+        <div class="row" style="margin-top: 5%;" data-aos="zoomIn" id="Service">
             <div class="col-sm-12">
                 <center>
                     <h5>WHAT I DO?</h5>
@@ -486,7 +521,7 @@ font-family: 'Unbounded', cursive; */
 
     <!-- ===================================== Education Section Start ================================================================== -->
     <div class="container-fluid" style="margin:3% 0;">
-        <div class="row">
+        <div class="row" id="Education">
             <div class="col-sm-12">
                 <center>
                     <h5>MY RESUME</h5>
@@ -607,8 +642,16 @@ font-family: 'Unbounded', cursive; */
     AOS.init({
         duration: 500
     });
-        //# sourceURL=pen.js
+    //# sourceURL=pen.js
 </script>
 <!-- ============================================= For Animation ============================================================= -->
+
+
+<!-- ============================================= Bootstrap ============================================================= -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+<!-- ============================================= Bootstrap ============================================================= -->
 
 </html>
